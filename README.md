@@ -11,6 +11,11 @@ Semester: Spring 2024
 
 Student Team: Saboor Dar, Henry Chen
 
+
+# Repository Structure
+This repository contains 2 jupyter notebook files, one for each model that we implemented (Resnet-18 and EfficientNet-B0). To run the notebooks, the dataset shown below is all that is needed.
+
+
 # Required Packages
 - [PyTorch](https://pytorch.org/) 
 - [Torch-Summary](https://pypi.org/project/torch-summary/)
@@ -51,6 +56,11 @@ For Resnet:
 
 # Compute Needs:
 Our algorithm was run on Kaggle which offered various accelerators to use. We opted for the GPU T4 x2 option. This allowed us to run 2 GPUs in parallel to speed up training. Overall, training and testing on the entire daset took roughly ~70 mins
+
+
+# Model Size:
+Resnet-18: ~50 Mb
+EfficientNet-B0: ~50 Mb
 
 
 # Results
