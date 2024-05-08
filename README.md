@@ -9,7 +9,7 @@ Instructor: Dr. Brandon Franzke
 
 Semester: Spring 2024
 
-Student Team: Saboor Dar, Henry Chen
+Student Team: Abdus Saboor Dar, Henry Chen
 
 # Required Packages
 - [PyTorch](https://pytorch.org/) 
@@ -18,6 +18,7 @@ Student Team: Saboor Dar, Henry Chen
 - [Pandas](https://pandas.pydata.org/)
 - [Numpy](https://numpy.org/)
 - [Sklearn](https://scikit-learn.org/stable/)
+- [Timm]https://timm.fast.ai/
 
 
 
@@ -47,7 +48,14 @@ For Resnet:
 - Optimiser: SGD
 - Learning Rate: Initially 0.01, reduced using 'ReduceLROnPlateau' Pytorch Function
 - 30 Epochs total
-
+  
+For EfficientNet:
+- Batch size: 32
+- Optimiser: Adam
+- Criterion: CrossEntropyLoss
+- Data Shuffle - True for Training, False for Validation and Test Set
+- Learning Rate: Initially 0.01, reduced using 'ReduceLROnPlateau' Pytorch Function
+- 5 Epochs total
 
 # Compute Needs:
 Our algorithm was run on Kaggle which offered various accelerators to use. We opted for the GPU T4 x2 option. This allowed us to run 2 GPUs in parallel to speed up training. Overall, training and testing on the entire daset took roughly ~70 mins
